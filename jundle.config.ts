@@ -1,8 +1,10 @@
-import type { JundleConfig } from "jundle";
+import tailwindcss from "@tailwindcss/vite";
+import type { JundleConfig, JundleVitePlugin } from "jundle";
 
 import pkgJson from "./package.json" with { type: "json" };
 
 export default {
+  vitePlugins: [tailwindcss() as JundleVitePlugin],
   bundles: {
     server: {
       graph: "server",
