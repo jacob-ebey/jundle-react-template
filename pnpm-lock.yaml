@@ -175,7 +175,7 @@ importers:
     devDependencies:
       '@jundle/cloudflare':
         specifier: 0.0.1-18
-        version: 0.0.1-18(esbuild@0.28.2)(jundle@0.0.1-10(esbuild@0.28.2)(rolldown@1.2.19)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6))))(rolldown@1.2.19)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6)))(wrangler@4.162.0(@types/node@26.6.6))
+        version: 0.0.1-18(esbuild@0.28.2)(jundle@0.0.1-18(esbuild@0.28.2)(rolldown@1.2.19)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6))))(rolldown@1.2.19)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6)))(wrangler@4.162.0(@types/node@26.6.6))
       '@jundle/react-server-dom':
         specifier: 0.0.1-18
         version: 0.0.1-18(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6))))(react@19.3.1)
@@ -204,8 +204,8 @@ importers:
         specifier: 0.5.2
         version: 0.5.2
       jundle:
-        specifier: 0.0.1-10
-        version: 0.0.1-10(esbuild@0.28.2)(rolldown@1.2.19)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6)))
+        specifier: 0.0.1-18
+        version: 0.0.1-18(esbuild@0.28.2)(rolldown@1.2.19)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6)))
       microlighter:
         specifier: ^2.2.0
         version: 2.2.0
@@ -838,38 +838,33 @@ packages:
       jundle: 0.0.1-18
       wrangler: 4.156.0
 
-  '@jundle/native-darwin-arm64@0.0.1-10':
-    resolution: {integrity: sha512-Q9At4pTmLtXc6DCngvxsdn4j1afghrl9E1E1zGoRW3fDdyPWz7Z3mwEkHm9T70tfJEXGbKE7TQqn+Kkxd4wPgA==}
+  '@jundle/native-darwin-arm64@0.0.1-18':
+    resolution: {integrity: sha512-4keci1eQL6fWymoFaruFq/X67b7lwaOWzGaaSZfT/a9yGpKkAjxCi6QiR/eiX+FlGEh2HTqqtq/PzQNcZjgkNg==}
     cpu: [arm64]
     os: [darwin]
 
-  '@jundle/native-darwin-x64@0.0.1-10':
-    resolution: {integrity: sha512-5u8dhOwxmUsqTH9bzw2vpcZq0Kl/tlLzfAR5ZN+ZOCTP25zFzbxLruDYsXFcsbdUa1nk8Z3KpY9ARCP6nOfQNw==}
+  '@jundle/native-darwin-x64@0.0.1-18':
+    resolution: {integrity: sha512-zbo/pgSJxQRtJaVdW+QjoLhm7u8hd+9bGqeTfYGR1GwPCeCK0vCyqsnNCS7ro1RPWiaoCOn0/Js+O6MHKl04XA==}
     cpu: [x64]
     os: [darwin]
 
-  '@jundle/native-linux-arm64-gnu@0.0.1-10':
-    resolution: {integrity: sha512-XzzpwZuUm9X8MorjuDL44oikrWIp0iFsNJpnyNwSHtqSqG+MhkxPcdG51JZuYnEESzfaEUq8P7s67g7i1hBg8A==}
+  '@jundle/native-linux-arm64-gnu@0.0.1-18':
+    resolution: {integrity: sha512-T35bRfMfuTtQXfzEQHftdAqIf0xh7gyBgywuLEikGMB3f7DeMhpUSqL3Ij7A+zRrelxhoVaWEERCTD0wdm1bPQ==}
     cpu: [arm64]
     os: [linux]
 
-  '@jundle/native-linux-arm64-musl@0.0.1-10':
-    resolution: {integrity: sha512-EmqKyL32JRjmJTEgRcd66tf/gXW0SSMvkX3vZFauPjdWofSUWJAY0EDj5jAMSbsdqHdqpwdQz7APt/duJjqS0w==}
-    cpu: [arm64]
-    os: [linux]
-
-  '@jundle/native-linux-x64-gnu@0.0.1-10':
-    resolution: {integrity: sha512-uCpve51+AF1C2VGw+txZpg6vCT0FpLqPUp5ls/9h7CgmqH0bSY8pYrqKeata8Reeo4lhduB/+n0/ADbrsfbfgg==}
+  '@jundle/native-linux-x64-gnu@0.0.1-18':
+    resolution: {integrity: sha512-CibFNIB/Li3rfv7WpyWHKoKKwx1mwHbqFdHKTSDNalrfig49cyJVU34trrZ4QotxiYlZNZjbfRG14hjMXjMv1g==}
     cpu: [x64]
     os: [linux]
 
-  '@jundle/native-linux-x64-musl@0.0.1-10':
-    resolution: {integrity: sha512-SWCg+85OuJryjH90EMOUwpqFwFh3rlwxuxGT9qlcqbST9fdFRfZKmrYnHpE/RY7zlm01xkZMI7PPZD+snG/T8w==}
+  '@jundle/native-linux-x64-musl@0.0.1-18':
+    resolution: {integrity: sha512-nfungmWdzTsWCw9nQt7YasK6cdkKv8T3KC/SZVUaaPFOf+EfByuhBrHIB7D0wR5bw5GIaToQJyTtH9YxJrnY7Q==}
     cpu: [x64]
     os: [linux]
 
-  '@jundle/native-win32-x64-msvc@0.0.1-10':
-    resolution: {integrity: sha512-vUzEfzJxIp5yKZ07f8o0jOmvNyFFmLkCGsMNoaXINZDUYZ1bRBP69Spr564DGKxwE35k87YK4Q2HKGM/hhb/vA==}
+  '@jundle/native-win32-x64-msvc@0.0.1-18':
+    resolution: {integrity: sha512-3m7uOpPNFNoAISxWzBYY/dWPxqgAAvXMYq/ELNbQcVgAmGDk85SyXCwUI1gsG26uPhF/+YAvZfz0BGFmi9kz3g==}
     cpu: [x64]
     os: [win32]
 
@@ -1813,8 +1808,8 @@ packages:
   json-schema-traverse@1.0.0:
     resolution: {integrity: sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==}
 
-  jundle@0.0.1-10:
-    resolution: {integrity: sha512-sBuCG+HJvIgCR/0SYhrDItRZpEmuYFeQwj1p9sxS2Xn8wlM0tb3s9Z87kiTuMu9vr9Y72oyARBQR00J/yr7rtA==}
+  jundle@0.0.1-18:
+    resolution: {integrity: sha512-nRIt/ER3cuYfEGznoD3PQeU1KcmqFj+IpFXHxFgzP4Tve7udFKLHZsPDkUobGsVf6mAi/1/O0bPllB1OlF8kOQ==}
     hasBin: true
 
   kleur@4.1.5:
@@ -2701,9 +2696,9 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.3
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  '@jundle/cloudflare@0.0.1-18(esbuild@0.28.2)(jundle@0.0.1-10(esbuild@0.28.2)(rolldown@1.2.19)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6))))(rolldown@1.2.19)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6)))(wrangler@4.162.0(@types/node@26.6.6))':
+  '@jundle/cloudflare@0.0.1-18(esbuild@0.28.2)(jundle@0.0.1-18(esbuild@0.28.2)(rolldown@1.2.19)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6))))(rolldown@1.2.19)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6)))(wrangler@4.162.0(@types/node@26.6.6))':
     dependencies:
-      jundle: 0.0.1-10(esbuild@0.28.2)(rolldown@1.2.19)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6)))
+      jundle: 0.0.1-18(esbuild@0.28.2)(rolldown@1.2.19)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6)))
       miniflare: 4.20260730.0
       unplugin: 3.7.0(esbuild@0.28.2)(rolldown@1.2.19)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6)))
       wrangler: 4.162.0(@types/node@26.6.6)
@@ -2721,25 +2716,22 @@ snapshots:
       - vite
       - webpack
 
-  '@jundle/native-darwin-arm64@0.0.1-10':
+  '@jundle/native-darwin-arm64@0.0.1-18':
     optional: true
 
-  '@jundle/native-darwin-x64@0.0.1-10':
+  '@jundle/native-darwin-x64@0.0.1-18':
     optional: true
 
-  '@jundle/native-linux-arm64-gnu@0.0.1-10':
+  '@jundle/native-linux-arm64-gnu@0.0.1-18':
     optional: true
 
-  '@jundle/native-linux-arm64-musl@0.0.1-10':
+  '@jundle/native-linux-x64-gnu@0.0.1-18':
     optional: true
 
-  '@jundle/native-linux-x64-gnu@0.0.1-10':
+  '@jundle/native-linux-x64-musl@0.0.1-18':
     optional: true
 
-  '@jundle/native-linux-x64-musl@0.0.1-10':
-    optional: true
-
-  '@jundle/native-win32-x64-msvc@0.0.1-10':
+  '@jundle/native-win32-x64-msvc@0.0.1-18':
     optional: true
 
   '@jundle/react-server-dom@0.0.1-18(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6))))(react@19.3.1)':
@@ -3388,7 +3380,7 @@ snapshots:
 
   json-schema-traverse@1.0.0: {}
 
-  jundle@0.0.1-10(esbuild@0.28.2)(rolldown@1.2.19)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6))):
+  jundle@0.0.1-18(esbuild@0.28.2)(rolldown@1.2.19)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6))):
     dependencies:
       '@hono/node-server': 2.1.8(hono@4.13.18)
       '@jridgewell/gen-mapping': 0.3.13
@@ -3407,13 +3399,12 @@ snapshots:
       unplugin: 3.7.0(esbuild@0.28.2)(rolldown@1.2.19)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))(webpack@5.112.2(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.33)(sharp@0.35.5(@types/node@26.6.6)))
       ws: 8.23.0
     optionalDependencies:
-      '@jundle/native-darwin-arm64': 0.0.1-10
-      '@jundle/native-darwin-x64': 0.0.1-10
-      '@jundle/native-linux-arm64-gnu': 0.0.1-10
-      '@jundle/native-linux-arm64-musl': 0.0.1-10
-      '@jundle/native-linux-x64-gnu': 0.0.1-10
-      '@jundle/native-linux-x64-musl': 0.0.1-10
-      '@jundle/native-win32-x64-msvc': 0.0.1-10
+      '@jundle/native-darwin-arm64': 0.0.1-18
+      '@jundle/native-darwin-x64': 0.0.1-18
+      '@jundle/native-linux-arm64-gnu': 0.0.1-18
+      '@jundle/native-linux-x64-gnu': 0.0.1-18
+      '@jundle/native-linux-x64-musl': 0.0.1-18
+      '@jundle/native-win32-x64-msvc': 0.0.1-18
     transitivePeerDependencies:
       - '@farmfe/core'
       - '@rsbuild/core'
