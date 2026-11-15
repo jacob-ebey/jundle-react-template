@@ -1,7 +1,10 @@
 "use server-entry";
 
+import { ClientFrame } from "#components/client-frame.tsx";
+import { ServerFrame } from "#components/server-frame.tsx";
 import { Button } from "@ui-sdk/react/button";
 import { Separator } from "@ui-sdk/react/separator";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
@@ -58,6 +61,12 @@ export default function Home() {
               Read the UI SDK docs
             </Button>
           </div>
+
+          <Separator />
+
+          <Suspense fallback="loading...">
+            <ClientFrame id="example-frame" src="/example-frame" />
+          </Suspense>
         </main>
       </body>
     </html>

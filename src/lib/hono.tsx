@@ -1,11 +1,33 @@
+import { AsyncLocalStorage } from "node:async_hooks";
 import {
   renderHTML,
   renderRSC,
   renderRequest,
   type PageComponent,
 } from "@jundle/rsc";
-import type { Context, Env, Handler } from "hono";
-import type { BlankInput, Input } from "hono/types";
+import type { Context, Env, Handler, Hono, MiddlewareHandler } from "hono";
+import type { BlankInput, HandlerResponse, Input } from "hono/types";
+
+import type Server from "#server.tsx";
+
+const ServerStorage = new AsyncLocalStorage<Hono<any, any, any>>();
+
+export function getServer(): typeof Server {
+  const server = ServerStorage.getStore();
+  if (!server) throw new Error("No server provided.");
+  return server;
+}
+
+export function serverStorage<
+  E extends Env = any,
+  P extends string = string,
+  I extends Input = {},
+  R extends HandlerResponse<any> = Response,
+>(provide: () => Hono): MiddlewareHandler<E, P, I, R> {
+  return (_, next) => {
+    return ServerStorage.run(provide(), next);
+  };
+}
 
 export type RouteProps<
   E extends Env = any,

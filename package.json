@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@jundle/cloudflare": "0.0.1-17",
+    "@jundle/react-server-dom": "0.0.1-17",
     "@jundle/rsc": "0.0.1-17",
     "@tailwindcss/vite": "^4.3.5",
     "@types/node": "^26.6.6",

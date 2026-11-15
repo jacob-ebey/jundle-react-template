@@ -1,5 +1,5 @@
 {
-  "include": ["src", "jundle.config.ts"],
+  "include": ["src", "jundle.config.ts", "worker-configuration.d.ts"],
   "compilerOptions": {
     "jsx": "react-jsx",
     "lib": ["DOM", "DOM.Iterable", "ES2024"],
