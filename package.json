@@ -14,7 +14,7 @@
     "hono": "^4.13.17"
   },
   "devDependencies": {
-    "@jundle/rsc": "0.0.1-15",
+    "@jundle/rsc": "0.0.1-16",
     "@tailwindcss/vite": "^4.3.5",
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
@@ -22,7 +22,7 @@
     "@ui-sdk/core": "0.1.0-beta.1",
     "@ui-sdk/react": "0.1.0-beta.1",
     "cn": "0.5.2",
-    "jundle": "0.0.1-15",
+    "jundle": "0.0.1-16",
     "microlighter": "^2.2.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
