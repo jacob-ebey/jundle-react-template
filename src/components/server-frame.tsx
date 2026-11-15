@@ -23,7 +23,7 @@ export async function ServerFrame({ id, src }: ServerFrameProps) {
     ),
   ).then((response) => {
     if (!response.body) throw new Error("No frame response body");
-    return response.body;
+    return response.body.values();
   });
 
   return <ClientFrame id={id} initial={await initial} src={src} />;

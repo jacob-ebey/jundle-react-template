@@ -4,7 +4,6 @@ import { Button } from "@ui-sdk/react/button";
 import { Separator } from "@ui-sdk/react/separator";
 import { Suspense } from "react";
 
-import { ClientFrame } from "#components/client-frame.tsx";
 import { ServerFrame } from "#components/server-frame.tsx";
 import { ReloadFrame } from "./client.tsx";
 

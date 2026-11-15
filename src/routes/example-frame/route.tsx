@@ -1,5 +1,7 @@
 "use server-entry";
 
+import { ReloadSelf } from "./client";
+
 let count = 0;
 
 export default async function ExampleFrame() {
@@ -7,6 +9,7 @@ export default async function ExampleFrame() {
   return (
     <div>
       <p>Hello, Frame {count++}!</p>
+      <ReloadSelf />
     </div>
   );
 }
