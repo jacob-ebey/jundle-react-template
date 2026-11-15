@@ -1,8 +1,6 @@
 import tailwindcss from "@tailwindcss/vite";
 import type { JundleConfig, JundleVitePlugin } from "jundle";
 
-import pkgJson from "./package.json" with { type: "json" };
-
 export default {
   vitePlugins: [tailwindcss() as JundleVitePlugin],
   bundles: {
@@ -15,13 +13,12 @@ export default {
     {
       bundle: "server",
       file: "./src/server.tsx",
-      runtime: "node",
+      runtime: "@jundle/cloudflare",
     },
   ],
   graphs: {
     server: {
-      conditions: ["react-server", "..."],
-      external: Object.keys(pkgJson.dependencies),
+      conditions: ["react-server", "workerd", "..."],
     },
   },
 } satisfies JundleConfig;

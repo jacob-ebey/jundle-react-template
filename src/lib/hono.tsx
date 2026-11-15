@@ -7,6 +7,14 @@ import {
 import type { Context, Env, Handler } from "hono";
 import type { BlankInput, Input } from "hono/types";
 
+export type RouteProps<
+  E extends Env = any,
+  P extends string = any,
+  I extends Input = BlankInput,
+> = {
+  c: Context<E, P, I>;
+};
+
 export function lazyRenderHTML<
   E extends Env = any,
   P extends string = any,

@@ -14,7 +14,8 @@
     "hono": "^4.13.17"
   },
   "devDependencies": {
-    "@jundle/rsc": "0.0.1-16",
+    "@jundle/cloudflare": "0.0.1-17",
+    "@jundle/rsc": "0.0.1-17",
     "@tailwindcss/vite": "^4.3.5",
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
@@ -22,13 +23,14 @@
     "@ui-sdk/core": "0.1.0-beta.1",
     "@ui-sdk/react": "0.1.0-beta.1",
     "cn": "0.5.2",
-    "jundle": "0.0.1-16",
+    "jundle": "0.0.1-17",
     "microlighter": "^2.2.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-server-dom-webpack": "^19.3.1",
     "tailwindcss": "^4.3.5",
-    "typescript": "7.1.0-beta"
+    "typescript": "7.1.0-beta",
+    "wrangler": "^4.162.0"
   },
   "packageManager": "pnpm@12.18.0",
   "devEngines": {
