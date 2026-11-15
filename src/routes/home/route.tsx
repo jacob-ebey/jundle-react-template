@@ -1,10 +1,12 @@
 "use server-entry";
 
-import { ClientFrame } from "#components/client-frame.tsx";
-import { ServerFrame } from "#components/server-frame.tsx";
 import { Button } from "@ui-sdk/react/button";
 import { Separator } from "@ui-sdk/react/separator";
 import { Suspense } from "react";
+
+import { ClientFrame } from "#components/client-frame.tsx";
+import { ServerFrame } from "#components/server-frame.tsx";
+import { ReloadFrame } from "./client.tsx";
 
 export default function Home() {
   return (
@@ -64,9 +66,12 @@ export default function Home() {
 
           <Separator />
 
+          <ReloadFrame />
           <Suspense fallback="loading...">
-            <ClientFrame id="example-frame" src="/example-frame" />
+            <ServerFrame id="example-frame" src="/example-frame" />
           </Suspense>
+
+          <Separator />
         </main>
       </body>
     </html>

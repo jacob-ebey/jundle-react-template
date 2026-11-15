@@ -4,11 +4,11 @@ import { getServer } from "#lib/hono.tsx";
 import { ClientFrame } from "./client-frame";
 
 export type ServerFrameProps = {
-  id?: string;
+  id: string;
   src: string;
 };
 
-export function ServerFrame({ id, src }: ServerFrameProps) {
+export async function ServerFrame({ id, src }: ServerFrameProps) {
   const c = getContext();
   const server = getServer();
   const url = new URL(src, c.req.url);
@@ -26,5 +26,5 @@ export function ServerFrame({ id, src }: ServerFrameProps) {
     return response.body;
   });
 
-  return <ClientFrame id={id} initial={initial} src={src} />;
+  return <ClientFrame id={id} initial={await initial} src={src} />;
 }

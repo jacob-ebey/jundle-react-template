@@ -2,14 +2,14 @@ allowBuilds:
   esbuild: false
   workerd: false
 minimumReleaseAgeExclude:
-  - "@jundle/cloudflare@0.0.1-18"
-  - "@jundle/native-darwin-arm64@0.0.1-18"
-  - "@jundle/native-darwin-x64@0.0.1-18"
-  - "@jundle/native-linux-arm64-gnu@0.0.1-18"
-  - "@jundle/native-linux-arm64-musl@0.0.1-18"
-  - "@jundle/native-linux-x64-gnu@0.0.1-18"
-  - "@jundle/native-linux-x64-musl@0.0.1-18"
-  - "@jundle/native-win32-x64-msvc@0.0.1-18"
-  - "@jundle/react-server-dom@0.0.1-18"
-  - "@jundle/rsc@0.0.1-18"
-  - jundle@0.0.1-18
+  - "@jundle/cloudflare@0.0.1-19"
+  - "@jundle/native-darwin-arm64@0.0.1-19"
+  - "@jundle/native-darwin-x64@0.0.1-19"
+  - "@jundle/native-linux-arm64-gnu@0.0.1-19"
+  - "@jundle/native-linux-arm64-musl@0.0.1-19"
+  - "@jundle/native-linux-x64-gnu@0.0.1-19"
+  - "@jundle/native-linux-x64-musl@0.0.1-19"
+  - "@jundle/native-win32-x64-msvc@0.0.1-19"
+  - "@jundle/react-server-dom@0.0.1-19"
+  - "@jundle/rsc@0.0.1-19"
+  - jundle@0.0.1-19

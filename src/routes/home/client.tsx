@@ -1,5 +1,18 @@
 "use client";
 
+import { Button } from "@ui-sdk/react/button";
+
+import { useReloadFrame } from "#components/client-frame.tsx";
+
+export function ReloadFrame() {
+  const [reloadFrame, pending] = useReloadFrame("example-frame");
+  return (
+    <Button type="button" onClick={reloadFrame}>
+      Reload Frame {pending ? "(pending)" : null}
+    </Button>
+  );
+}
+
 const MICROLIGHTER =
   "https://esm.sh/microlighter@2.2.0/es2022/micro-lighter-element.min.mjs";
 if (typeof document !== "undefined") {
