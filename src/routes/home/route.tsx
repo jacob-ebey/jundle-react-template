@@ -4,8 +4,9 @@ import { Button } from "@ui-sdk/react/button";
 import { Separator } from "@ui-sdk/react/separator";
 import { Suspense } from "react";
 
-import { ServerFrame } from "#components/server-frame.tsx";
-import { ReloadFrame } from "./client.tsx";
+import { Frame } from "#components/frame";
+
+import { DynamicFrameSrc } from "./client.tsx";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
 
           <div className="flex gap-4 sm:gap-5 flex-col lg:items-center lg:flex-row">
             <div className="flex-1 flex flex-col gap-4 sm:gap-5">
-              <h2 className="text-4xl leading-[1.15] font-[450] tracking-[-0.045em] text-balance sm:text-5xl sm:leading-[1.08] lg:text-6xl">
+              <h2 className="text-3xl leading-[1.15] font-[450] tracking-[-0.045em] text-balance sm:text-4xl sm:leading-[1.08] lg:text-5xl">
                 Jundle? What's that?
               </h2>
               <p className="max-w-200 text-lg leading-normal tracking-[-0.015em] text-pretty text-foreground/70 sm:text-xl lg:text-2xl lg:leading-[1.45]">
@@ -47,7 +48,7 @@ export default function Home() {
 
           <div className="flex gap-4 sm:gap-5 flex-col lg:items-center lg:flex-row">
             <div className="flex-1 flex flex-col gap-4 sm:gap-5">
-              <h2 className="text-4xl leading-[1.15] font-[450] tracking-[-0.045em] text-balance sm:text-5xl sm:leading-[1.08] lg:text-6xl">
+              <h2 className="text-3xl leading-[1.15] font-[450] tracking-[-0.045em] text-balance sm:text-4xl sm:leading-[1.08] lg:text-5xl">
                 UI SDK
               </h2>
               <p className="max-w-200 text-lg leading-normal tracking-[-0.015em] text-pretty text-foreground/70 sm:text-xl lg:text-2xl lg:leading-[1.45]">
@@ -65,9 +66,18 @@ export default function Home() {
 
           <Separator />
 
-          <ReloadFrame />
+          <Frame src="/example-frame" />
+
+          <Separator />
+
           <Suspense fallback="loading...">
-            <ServerFrame id="example-frame" src="/example-frame" />
+            <Frame src="/example-frame/loading" />
+          </Suspense>
+
+          <Separator />
+
+          <Suspense fallback="loading...">
+            <DynamicFrameSrc />
           </Suspense>
 
           <Separator />

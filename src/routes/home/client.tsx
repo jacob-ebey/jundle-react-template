@@ -1,15 +1,24 @@
 "use client";
 
-import { Button } from "@ui-sdk/react/button";
+import { Suspense, useState } from "react";
+import { Input } from "@ui-sdk/react/input";
 
-import { useReloadFrame } from "#components/client-frame.tsx";
+import { Frame } from "#components/frame";
 
-export function ReloadFrame() {
-  const [reloadFrame, pending] = useReloadFrame("example-frame");
+export function DynamicFrameSrc() {
+  const [name, setName] = useState("");
+
   return (
-    <Button type="button" onClick={reloadFrame}>
-      Reload Frame {pending ? "(pending)" : null}
-    </Button>
+    <div>
+      <Input
+        onInput={(e) => {
+          setName(e.currentTarget.value);
+        }}
+      />
+      <Suspense fallback="Loading...">
+        <Frame src={`/example-frame${name.trim() ? `/${name.trim()}` : ""}`} />
+      </Suspense>
+    </div>
   );
 }
 

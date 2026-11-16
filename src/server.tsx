@@ -13,7 +13,7 @@ const app = new Hono<{ Bindings: Cloudflare.Env }>()
     lazyRenderHTML(() => import("./routes/home/route.tsx")),
   )
   .get(
-    "/example-frame",
+    "/example-frame/:name?",
     lazyRenderRSC(() => import("./routes/example-frame/route.tsx")),
   );
 

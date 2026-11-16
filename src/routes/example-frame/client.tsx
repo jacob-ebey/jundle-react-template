@@ -1,13 +1,14 @@
 "use client";
 
-import { useReloadFrame } from "#components/client-frame.tsx";
 import { Button } from "@ui-sdk/react/button";
 
+import { useFrame } from "#components/frame";
+
 export function ReloadSelf() {
-  const [reloadFrame, pending] = useReloadFrame();
+  const frame = useFrame();
   return (
-    <Button type="button" onClick={reloadFrame}>
-      Reload Self {pending ? "(pending)" : null}
+    <Button type="button" onClick={frame.reload}>
+      Reload Self {frame.pending ? "(pending)" : null}
     </Button>
   );
 }

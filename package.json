@@ -7,7 +7,11 @@
     "dev": "jundle dev"
   },
   "imports": {
-    "#*": "./src/*"
+    "#*": "./src/*",
+    "#components/frame": {
+      "react-server": "./src/components/frame/server.tsx",
+      "default": "./src/components/frame/client.tsx"
+    }
   },
   "dependencies": {
     "@hono/node-server": "^2.1.6",
